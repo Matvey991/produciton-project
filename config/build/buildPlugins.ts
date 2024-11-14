@@ -1,5 +1,5 @@
 import HtmlWebpackPlugin from "html-webpack-plugin";
-import webpack, { DefinePlugin } from "webpack";
+import webpack, { DefinePlugin, HotModuleReplacementPlugin } from "webpack";
 import { BuildOptions } from "./types/config";
 import MiniCssExtraPlugin from "mini-css-extract-plugin";
 
@@ -19,5 +19,6 @@ export function buildPlugins({
     new DefinePlugin({
       __IS_DEV__: JSON.stringify(isDev),
     }),
+    new HotModuleReplacementPlugin(),
   ];
 }
