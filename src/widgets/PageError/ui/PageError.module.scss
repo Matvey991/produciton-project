@@ -1,0 +1,21 @@
+.PageError {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    font-family: 'Jast', sans-serif;
+}
+
+.PageError button {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.lang {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: #6f73ee;
+}
