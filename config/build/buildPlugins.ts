@@ -1,8 +1,8 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin'
-import webpack, { DefinePlugin, HotModuleReplacementPlugin } from 'webpack'
-import { BuildOptions } from './types/config'
-import MiniCssExtraPlugin from 'mini-css-extract-plugin'
+import webpack from 'webpack'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
+import { BuildOptions } from './types/config'
 
 export function buildPlugins({
     paths,
@@ -13,14 +13,14 @@ export function buildPlugins({
             template: paths.html,
         }),
         new webpack.ProgressPlugin(),
-        new MiniCssExtraPlugin({
+        new MiniCssExtractPlugin({
             filename: 'css/[name].[contenthash:8].css',
             chunkFilename: 'css/[name].[contenthash:8].css',
         }),
-        new DefinePlugin({
+        new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev),
         }),
-        new HotModuleReplacementPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
         new BundleAnalyzerPlugin({
             openAnalyzer: false,
         }),
