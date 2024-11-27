@@ -1,9 +1,10 @@
-import { classNames } from 'shared/lib/classNames/classNames'
-import { ButtonHTMLAttributes, FC } from 'react'
-import cls from './Button.module.scss'
+import { classNames } from 'shared/lib/classNames/classNames';
+import { ButtonHTMLAttributes, FC } from 'react';
+import cls from './Button.module.scss';
 
 export enum ThemeButton {
     CLEAR = 'clear',
+    CLEAR_INVERTED = 'clearInverted',
     OUTLINE = 'outline',
     BACKGROUND = 'background',
     BACKGROUND_INVERTED = 'backgroundInverted',
@@ -30,13 +31,13 @@ export const Button: FC<ButtonProps> = (props) => {
         square,
         size = ButtonSize.M,
         ...otherProps
-    } = props
+    } = props;
 
     const mods: Record<string, boolean> = {
         [cls[theme]]: true,
         [cls.square]: square,
         [cls[size]]: true,
-    }
+    };
 
     return (
         <button
@@ -46,5 +47,5 @@ export const Button: FC<ButtonProps> = (props) => {
         >
             {children}
         </button>
-    )
-}
+    );
+};

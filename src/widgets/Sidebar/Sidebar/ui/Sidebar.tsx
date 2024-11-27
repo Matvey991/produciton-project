@@ -1,26 +1,26 @@
-import { classNames } from 'shared/lib/classNames/classNames'
-import { useState } from 'react'
-import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher'
-import { Button, ButtonSize, ThemeButton } from 'shared/ui/Button/Button'
-import { useTranslation } from 'react-i18next'
-import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink'
-import { RoutePath } from 'shared/config/routeConfig/routeConfig'
-import AboutIcon from 'shared/assets/icons/about.svg'
-import MainIcon from 'shared/assets/icons/main.svg'
-import cls from './Sidebar.module.scss'
-import { ThemesSwitcher } from 'shared/ui/ThemeSwitcher'
+import { classNames } from 'shared/lib/classNames/classNames';
+import { useState } from 'react';
+import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
+import { Button, ButtonSize, ThemeButton } from 'shared/ui/Button/Button';
+import { useTranslation } from 'react-i18next';
+import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
+import { RoutePath } from 'shared/config/routeConfig/routeConfig';
+import AboutIcon from 'shared/assets/icons/about.svg';
+import MainIcon from 'shared/assets/icons/main.svg';
+import { ThemesSwitcher } from 'shared/ui/ThemeSwitcher';
+import cls from './Sidebar.module.scss';
 
 interface SidebarProps {
     className?: string
 }
 
 export const Sidebar = ({ className }: SidebarProps) => {
-    const [collapsed, setCollapsed] = useState(false)
-    const { t } = useTranslation()
+    const [collapsed, setCollapsed] = useState(false);
+    const { t } = useTranslation();
 
     const onToggle = () => {
-        setCollapsed((prev) => !prev)
-    }
+        setCollapsed((prev) => !prev);
+    };
 
     return (
         <div
@@ -62,5 +62,5 @@ export const Sidebar = ({ className }: SidebarProps) => {
                 <LangSwitcher short={collapsed} className={cls.lang} />
             </div>
         </div>
-    )
-}
+    );
+};
