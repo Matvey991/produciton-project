@@ -1,9 +1,10 @@
-import { render } from 'react-dom'
-import App from './app/App'
-import { BrowserRouter } from 'react-router-dom'
-import 'shared/config/i18n/i18n'
-import { ErrorBoundary } from 'app/Providers/ErrorBoundary'
-import { ThemeProvider } from 'app/Providers/ThemeProvider/ui/themeProvider'
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import 'shared/config/i18n/i18n';
+import { ErrorBoundary } from 'app/Providers/ErrorBoundary';
+import { ThemeProvider } from 'app/Providers/ThemeProvider';
+import App from 'app/App';
+import 'app/styles/index.scss';
 
 render(
     <BrowserRouter>
@@ -13,5 +14,5 @@ render(
             </ThemeProvider>
         </ErrorBoundary>
     </BrowserRouter>,
-    document.getElementById('root')
-)
+    document.getElementById('root'),
+);
