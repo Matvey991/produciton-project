@@ -3,6 +3,10 @@
 @import 'variables/global.scss';
 @import 'reset.scss';
 
+* {
+    font-family: "Jast", sans-serif;
+  }
+
 body {
     font: var(--font-m);
     color: var(--primary-color);
