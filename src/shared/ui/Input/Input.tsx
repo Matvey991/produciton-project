@@ -30,7 +30,8 @@ export const Input = memo((props: InputProps) => {
 
     const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         onChange?.(e.target.value);
-        setCaretPosition(e.target.value.length);
+        // @ts-ignore
+        setCaretPosition(e?.target?.value?.length);
     };
 
     const onBlur = () => {
