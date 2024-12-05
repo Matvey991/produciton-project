@@ -26,7 +26,7 @@ export function buildPlugins({
         plugins.push(
             new BundleAnalyzerPlugin({
                 openAnalyzer: false,
-                analyzerPort: 8889,
+                analyzerPort: 8888,
             }),
         );
     }
