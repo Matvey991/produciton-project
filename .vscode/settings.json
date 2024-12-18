@@ -1,0 +1,15 @@
+{
+    "i18n-ally.localesPaths": [
+        "public/locales",
+        "src/shared/config/i18n"
+    ],
+    "i18n-ally.sourceLanguage": "ru"
+} // {
+//     "editor.codeActionsOnSave": {
+//         "source.fixAll.eslint": "explicit"
+//     },
+//     "eslint.validate": ["javascript"],
+//     "editor.defaultFormatter": "esbenp.prettier-vscode",
+//     "editor.formatOnSave": true,
+//     "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"]
+// }
