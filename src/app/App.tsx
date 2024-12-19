@@ -1,19 +1,19 @@
-import { Navbar } from 'widgets/Navbar';
+import React, { Suspense, useEffect } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { Sidebar } from 'widgets/Sidebar/Sidebar';
-import { Suspense, useEffect } from 'react';
+import { Navbar } from 'widgets/Navbar';
 import { useDispatch } from 'react-redux';
 import { userActions } from 'entities/User';
+import { Sidebar } from 'widgets/Sidebar/Sidebar';
 import { useTheme } from './Providers/ThemeProvider';
 import { AppRouter } from './Providers/router';
 
-const App = () => {
+function App() {
     const { theme } = useTheme();
-    const dispathc = useDispatch();
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        dispathc(userActions.initAuthData());
-    }, [dispathc]);
+        dispatch(userActions.initAuthData());
+    }, [dispatch]);
 
     return (
         <div className={classNames('app', {}, [theme])}>
@@ -26,6 +26,6 @@ const App = () => {
             </Suspense>
         </div>
     );
-};
+}
 
 export default App;
