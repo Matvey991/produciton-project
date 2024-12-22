@@ -1,10 +1,10 @@
 import { Story } from '@storybook/react';
 import { StateSchema, StoreProvider } from 'app/Providers/StoreProvider';
 import { DeepPartial, ReducersMapObject } from '@reduxjs/toolkit';
-import { loginReducers } from 'features/AuthByUsername/modal/slice/loginSlice';
+import { loginReducer } from 'features/AuthByUsername/modal/slice/loginSlice';
 
 const defaultAsyncReducers: DeepPartial<ReducersMapObject<StateSchema>> = {
-    loginForm: loginReducers,
+    loginForm: loginReducer,
 };
 
 export const StoreDecorator = (

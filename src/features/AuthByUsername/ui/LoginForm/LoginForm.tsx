@@ -4,8 +4,8 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { Input } from 'shared/ui/Input/Input';
 import { useDispatch, useSelector } from 'react-redux';
 import { memo, useCallback } from 'react';
-import { loginActions, loginReducers } from 'features/AuthByUsername/modal/slice/loginSlice';
-import { loginByUsename } from 'features/AuthByUsername/modal/services/loginByUsername/loginByUsername';
+import { loginActions, loginReducer } from 'features/AuthByUsername/modal/slice/loginSlice';
+import { loginByUsername } from 'features/AuthByUsername/modal/services/loginByUsername/loginByUsername';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { getLoginUsername } from 'features/AuthByUsername/modal/selectors/getLoginUsername/getLoginUsername';
 import { getLoginPassword } from 'features/AuthByUsername/modal/selectors/getLoginPassword/getLoginPassword';
@@ -19,7 +19,7 @@ className?: string;
 }
 
 const initialReducers: ReducerList = {
-    loginForm: loginReducers,
+    loginForm: loginReducer,
 };
 
 const LoginForm = memo(({ className }: LoginFormProps) => {
@@ -39,7 +39,7 @@ const LoginForm = memo(({ className }: LoginFormProps) => {
     }, [dispatch]);
 
     const onLoginClick = useCallback(() => {
-        dispatch(loginByUsename({ username, password }));
+        dispatch(loginByUsername({ username, password }));
     }, [dispatch, username, password]);
 
     return (
