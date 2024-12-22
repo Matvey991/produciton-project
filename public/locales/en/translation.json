@@ -1,6 +1,7 @@
 {
     "Язык": "English",
     "О сайте": "About Page",
+    "Главная": "Main Page",
     "Главная страница": "Main Page",
     "Страница не найдена": "Page not Found",
     "Произошла непредвиденная ошибка": "An unexpected error has occurred",
@@ -11,5 +12,7 @@
     "Введите логин": "Enter your username",
     "Введите пароль": "Enter the password",
     "Вы ввели неверный логин или пароль": "You entered an incorrect username or password",
+    "Профиль": "Progile Page",
+    "Страница Профиля": "Progile Page",
     "Форма авторизации": "Auth form"
 }

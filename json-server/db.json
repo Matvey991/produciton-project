@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": { 
+    "first": "Дмитрий",
+    "lastName": "Александров",
+    "age": 23,
+    "currency": "RUB",
+    "county": "Russia",
+    "city": "Moscow",
+    "username": "admin",
+    "avatar": "https://static.vecteezy.com/system/resources/thumbnails/011/961/865/small/programmer-icon-line-color-illustration-vector.jpg"
+   }
 }

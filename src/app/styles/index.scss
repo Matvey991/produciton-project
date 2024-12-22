@@ -3,10 +3,6 @@
 @import 'variables/global.scss';
 @import 'reset.scss';
 
-* {
-    font-family: Consolas, sans-serif;
-  }
-
 .app,
 .app_modal {
     font: var(--font-m);
