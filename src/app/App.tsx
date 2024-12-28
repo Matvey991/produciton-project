@@ -4,8 +4,8 @@ import { Navbar } from 'widgets/Navbar';
 import { useDispatch } from 'react-redux';
 import { userActions } from 'entities/User';
 import { Sidebar } from 'widgets/Sidebar/index';
-import { useTheme } from './Providers/ThemeProvider';
-import { AppRouter } from './Providers/router';
+import { useTheme } from './providers/ThemeProvider';
+import { AppRouter } from './providers/router';
 
 function App() {
     const { theme } = useTheme();

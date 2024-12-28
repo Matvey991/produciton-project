@@ -28,14 +28,14 @@ export const Button = memo((props: ButtonProps) => {
     const {
         className,
         children,
-        theme,
+        theme = ThemeButton.OUTLINE,
         square,
         disabled,
         size = ButtonSize.M,
         ...otherProps
     } = props;
 
-    const additional: string[] = [className, cls[size], cls[theme]];
+    const additional: Array<string | undefined> = [className, cls[size], cls[theme]];
 
     return (
         <button
