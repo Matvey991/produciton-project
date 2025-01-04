@@ -16,10 +16,10 @@ export default {
     // cacheDirectory: "/private/var/folders/62/dbm4vtqs21z_ggrm5cntmwlh0000gn/T/jest_dx",
 
     // Automatically clear mock calls, instances and results before every test
-    globals: { 
+    globals: {
         __IS_DEV__: true,
         __API__: '',
-     },
+    },
     clearMocks: true,
     testEnvironment: 'jsdom',
     coveragePathIgnorePatterns: ['/node_modules/'],

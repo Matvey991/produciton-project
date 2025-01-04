@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { userActions } from 'entities/User';
 import { Sidebar } from 'widgets/Sidebar/index';
 import { useTheme } from './providers/ThemeProvider';
-import { AppRouter } from './providers/router';
+import AppRouter from './providers/router/ui/AppRouter';
 
 function App() {
     const { theme } = useTheme();

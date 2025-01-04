@@ -22,17 +22,21 @@
     {
       "id": "1",
       "username": "admin",
-      "password": "123"
+      "password": "123",
+      "jsonSettings": {
+        "isArticlePageWasOpened": true
+      }
     }
   ],
-  "profile": { 
+  "profile": {
     "first": "Дмитрий",
     "lastName": "Александров",
     "age": 23,
-    "currency": "RUB",
+    "currency": "USD",
     "county": "Russia",
     "city": "Moscow",
-    "username": "admin",
-    "avatar": "https://static.vecteezy.com/system/resources/thumbnails/011/961/865/small/programmer-icon-line-color-illustration-vector.jpg"
-   }
+    "username": "Dima",
+    "avatar": "https://img.freepik.com/free-vector/creative-hacker-logo-template_23-2149199402.jpg",
+    "country": "Kazakhstan"
+  }
 }
