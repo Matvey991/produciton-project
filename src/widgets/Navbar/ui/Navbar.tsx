@@ -5,6 +5,8 @@ import { LoginModal } from 'features/AuthByUsername';
 import { useDispatch, useSelector } from 'react-redux';
 import { getUserAuthData, userActions } from 'entities/User';
 import { classNames } from 'shared/lib/classNames/classNames';
+import { Link } from 'react-router-dom';
+import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
@@ -34,13 +36,17 @@ export const Navbar = memo(({ className }: NavbarProps) => {
     if (authData) {
         return (
             <div className={classNames(cls.Navbar, {}, [className])}>
-                <Button
-                    theme={ThemeButton.CLEAR_INVERTED}
-                    onClick={onLogout}
+                <Link
                     className={cls.links}
+                    to={RoutePath.main}
                 >
-                    {t('Выйти')}
-                </Button>
+                    <Button
+                        theme={ThemeButton.CLEAR_INVERTED}
+                        onClick={onLogout}
+                    >
+                        {t('Выйти')}
+                    </Button>
+                </Link>
             </div>
         );
     }
@@ -54,7 +60,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
             >
                 {t('Войти')}
             </Button>
-            <LoginModal isOpen={isAuthModal} onCLose={onCLoseModal} />
+            <LoginModal isOpen={isAuthModal} onClose={onCLoseModal} />
         </div>
     );
 });

@@ -8,18 +8,18 @@ import { LoginFormAsync } from '../LoginForm/LoginForm.async';
 interface LoginModalProps {
 className?: string;
 isOpen: boolean;
-onCLose: () => void
+onClose: () => void
 }
 
-export const LoginModal = ({ className, isOpen, onCLose }: LoginModalProps) => (
+export const LoginModal = ({ className, isOpen, onClose }: LoginModalProps) => (
     <Modal
         className={classNames(cls.LoginModal, {}, [className])}
         isOpen={isOpen}
-        onCLose={onCLose}
+        onClose={onClose}
         lazy
     >
         <Suspense fallback={<Loader />}>
-            <LoginFormAsync onSuccess={onCLose} />
+            <LoginFormAsync onSuccess={onClose} />
         </Suspense>
     </Modal>
 );

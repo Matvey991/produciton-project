@@ -8,18 +8,12 @@
 }
 
 .PageError button {
-    margin-top: 20px;
-    cursor: pointer;
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-    color: var(--inverted-primary-color);
+    margin-top: 15px;
 }
 
 .lang {
     position: absolute;
     bottom: 30px;
     left: 20px;
-    color: #6f73ee;
+    color: var(--primary-color);
 }

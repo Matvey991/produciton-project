@@ -3,8 +3,7 @@ import { memo, useMemo, useState } from 'react';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
 import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
 import { Button, ButtonSize, ThemeButton } from 'shared/ui/Button/Button';
-import { SidebarItemList } from 'widgets/Sidebar/model/items';
-import { useTranslation } from 'react-i18next';
+import { SidebarItemsList } from 'widgets/Sidebar/model/items';
 import cls from './Sidebar.module.scss';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 
@@ -13,14 +12,13 @@ interface SidebarProps {
 }
 
 export const Sidebar = memo(({ className }: SidebarProps) => {
-    const { t } = useTranslation();
     const [collapsed, setCollapsed] = useState(false);
 
     const onToggle = () => {
         setCollapsed((prev) => !prev);
     };
 
-    const itemsList = useMemo(() => SidebarItemList.map((item) => (
+    const itemsList = useMemo(() => SidebarItemsList.map((item) => (
         <SidebarItem
             item={item}
             collapsed={collapsed}

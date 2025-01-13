@@ -15,7 +15,7 @@ className?: string;
 export const ProfilePageHeader = ({ className }: ProfilePageHeaderProps) => {
     const { t } = useTranslation('profile');
 
-    const redonly = useSelector(getProfileReadonly);
+    const readonly = useSelector(getProfileReadonly);
     const dispatch = useAppDispatch();
 
     const onEdit = useCallback(() => {
@@ -28,13 +28,12 @@ export const ProfilePageHeader = ({ className }: ProfilePageHeaderProps) => {
 
     const onSave = useCallback(() => {
         dispatch(updateProfileData());
-        dispatch(profileActions.cancelEdit());
     }, [dispatch]);
 
     return (
         <div className={classNames(cls.ProfilePageHeader, {}, [className])}>
             <Text title={t('Профиль')} />
-            {redonly ? (
+            {readonly ? (
                 <Button
                     className={cls.editBtn}
                     theme={ThemeButton.OUTLINE}

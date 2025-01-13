@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Button, ThemeButton } from 'shared/ui/Button/Button';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Input } from 'shared/ui/Input/Input';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { memo, useCallback } from 'react';
 import { loginActions, loginReducer } from 'features/AuthByUsername/modal/slice/loginSlice';
 import { loginByUsername } from 'features/AuthByUsername/modal/services/loginByUsername/loginByUsername';
@@ -11,7 +11,7 @@ import { getLoginUsername } from 'features/AuthByUsername/modal/selectors/getLog
 import { getLoginPassword } from 'features/AuthByUsername/modal/selectors/getLoginPassword/getLoginPassword';
 import { getLoginIsLoading } from 'features/AuthByUsername/modal/selectors/getLoginIsLoading/getLoginIsLoading';
 import { getLoginError } from 'features/AuthByUsername/modal/selectors/getLoginError/getLoginError';
-import { DynamicModuleLoader, ReducerList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useAppDispatch } from 'shared/lib/hooks/userAppDispatch/useAppDispatch';
 import cls from './LoginForm.module.scss';
 
@@ -20,7 +20,7 @@ className?: string;
 onSuccess: () => void
 }
 
-const initialReducers: ReducerList = {
+const initialReducers: ReducersList = {
     loginForm: loginReducer,
 };
 
@@ -50,7 +50,7 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
     }, [onSuccess, dispatch, username, password]);
 
     return (
-        <DynamicModuleLoader removeAfterUmnount reducers={initialReducers}>
+        <DynamicModuleLoader removeAfterUnmount reducers={initialReducers}>
             <div className={classNames(cls.LoginForm, {}, [className])}>
                 <Text title={t('Форма авторизации')} />
                 {error && <Text text={t('Вы ввели неверный логин или пароль')} theme={TextTheme.ERROR} />}

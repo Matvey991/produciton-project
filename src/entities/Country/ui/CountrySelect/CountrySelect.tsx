@@ -1,7 +1,7 @@
 import { Currency } from 'entities/Currency/model/types/currency';
 import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames, Mods } from 'shared/lib/classNames/classNames';
 import { Select } from 'shared/ui/Select/Select';
 import { Country } from '../../model/types/country';
 
@@ -29,9 +29,11 @@ export const CountrySelect = memo(({
         onChange?.(value as Country);
     }, [onChange]);
 
+    const mods: Mods = {};
+
     return (
         <Select
-            className={classNames('', {}, [className])}
+            className={classNames('', mods, [className])}
             label={t('Укажите страну')}
             options={options}
             value={value}

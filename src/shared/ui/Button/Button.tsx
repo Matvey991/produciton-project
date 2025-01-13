@@ -22,7 +22,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     theme?: ThemeButton
     square?: boolean
     size?: ButtonSize
-    disabled?: boolean
+    disabled?: boolean | undefined
 }
 
 export const Button = memo((props: ButtonProps) => {

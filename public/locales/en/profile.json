@@ -1,6 +1,19 @@
 {
-  "Профиль": "Профиль",
-  "Редактировать": "Редактировать",
-  "Ваша фамилия": "Ваша фамилия",
-  "Ваше имя": "Ваше имя"
+  "Профиль": "Profile",
+  "Редактировать": "Edit",
+  "Ваша фамилия": "Your last name",
+  "Ваше имя": "Your name",
+  "Серверная ошибка при сохранении": "Server error when saving",
+  "Некорректный регион": "Incorrect region",
+  "Некорректный возраст": "Incorrect age",
+  "Имя и фамилия пользователя обязательны": "The user's first and last name are required",
+  "Данные не указаны": "The data is not specified",
+  "Введите имя пользователя": "Enter the user's name",
+  "Введите ссылку на аватар": "Enter the link to the avatar",
+  "Город": "City",
+  "Укажите валюту": "Specify the currency",
+  "Укажите страну": "Specify the country",
+  "Ваш возраст": "Your age",
+  "Отменить": "Cancel",
+  "Сохранить": "Save"
 }

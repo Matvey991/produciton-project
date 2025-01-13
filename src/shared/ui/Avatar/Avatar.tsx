@@ -22,7 +22,7 @@ export const Avatar = (props: AvatarProps) => {
 
     };
 
-    const style = useMemo<CSSProperties>(() => ({
+    const styles = useMemo<CSSProperties>(() => ({
         width: size || 100,
         height: size || 100,
     }), [size]);
@@ -30,7 +30,7 @@ export const Avatar = (props: AvatarProps) => {
     return (
         <img
             src={src}
-            style={style}
+            style={styles}
             alt={alt}
             className={classNames(cls.Avatar, mods, [className])}
         />
