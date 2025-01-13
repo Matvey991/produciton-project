@@ -48,6 +48,6 @@ server.use((req, res, next) => {
 
 server.use(router);
 
-server.listen(8001, () => {
-    console.log('server is running on 8001 port');
+server.listen(8000, () => {
+    console.log('server is running on 8000 port');
 });
