@@ -10,10 +10,7 @@ className?: string;
 const ArticlesPage = ({ className }: ArticlePageProps) => {
     const { t } = useTranslation('articles');
     return (
-        // eslint-disable-next-line i18next/no-literal-string
-        <div className={classNames(cls.ArticlePage, {}, [className])}>
-            ARTICLES PAGE
-        </div>
+        <div className={classNames(cls.ArticlePage, {}, [className])} />
     );
 };
 

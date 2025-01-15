@@ -1,7 +1,6 @@
 import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { Theme } from 'app/providers/ThemeProvider';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+
 import ArticlesPage from './ArticlesPage';
 
 export default {
@@ -12,12 +11,7 @@ export default {
     },
 } as ComponentMeta<typeof ArticlesPage>;
 
-// @ts-ignore
 const Template: ComponentStory<typeof ArticlesPage> = (args) => <ArticlesPage {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {};
-
-export const Dark = Template.bind({});
-Dark.args = {};
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
