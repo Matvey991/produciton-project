@@ -1,11 +1,10 @@
 /* eslint-disable i18next/no-literal-string */
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { memo, ReactNode, useCallback } from 'react';
+import { memo, useCallback } from 'react';
 import cls from './Code.module.scss';
 import { Button, ThemeButton } from '../Button/Button';
 import CopyIcon from '../../assets/icons/Copy.svg';
-import { Icon } from '../Icon/Icon';
 
 interface CodeProps {
    className?: string;

@@ -21,7 +21,7 @@ export const ArticleImageBlockComponent = memo(({ className, block }: ArticleIma
             />
             {block.title && (
                 <Text
-                    className={cls.title}
+                    text={block.title}
                     align={TextAlign.CENTER}
                 />
             )}

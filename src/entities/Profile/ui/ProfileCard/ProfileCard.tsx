@@ -74,7 +74,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
         <div className={classNames(cls.ProfileCard, mods, [className])}>
             <div className={cls.data}>
                 <div className={cls.avatarWrapper}>
-                    {data?.avatar && <Avatar alt="" src={data?.avatar} />}
+                    {data?.avatar && <Avatar alt={t('Аватар не загружается')} src={data?.avatar} />}
                 </div>
                 <Input
                     className={cls.input}
