@@ -1,13 +1,13 @@
 import { RouteProps } from 'react-router-dom';
 import { MainPage } from 'pages/MainPage';
 import { AboutPage } from 'pages/AboutPage';
-import { NotFoundPage } from 'pages/NotFounndPage';
 import { ProfilePage } from 'pages/ProfilePage';
-import ArticleDetailsPage from 'pages/ArticleDetailsPage/ui/ArticleDetailsPage/ArticleDetailsPage';
-import { ArticlePage } from 'pages/ArticlesPage';
+import { ArticleDetailsPage } from 'pages/ArticleDetailsPage';
+import ArticlesPage from 'pages/ArticlesPage/ui/ArticlesPage';
+import { NotFoundPage } from 'pages/NotFounndPage';
 
 export type AppRoutesProps = RouteProps & {
-    authOnly?: boolean
+    authOnly?: boolean;
 }
 
 export enum AppRoutes {
@@ -17,17 +17,17 @@ export enum AppRoutes {
     ARTICLES = 'articles',
     ARTICLE_DETAILS = 'article_details',
     // last
-    __NOT_FOUND = 'not_found',
+    NOT_FOUND = 'not_found',
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.MAIN]: '/',
     [AppRoutes.ABOUT]: '/about',
-    [AppRoutes.PROFILE]: '/profile',
+    [AppRoutes.PROFILE]: '/profile/', // + :id
     [AppRoutes.ARTICLES]: '/articles',
-    [AppRoutes.ARTICLE_DETAILS]: '/articles/', // + id
-    // last
-    [AppRoutes.__NOT_FOUND]: '*',
+    [AppRoutes.ARTICLE_DETAILS]: '/articles/', // + :id
+    // последний
+    [AppRoutes.NOT_FOUND]: '*',
 };
 
 export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
@@ -40,13 +40,13 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
         element: <AboutPage />,
     },
     [AppRoutes.PROFILE]: {
-        path: RoutePath.profile,
+        path: `${RoutePath.profile}:id`,
         element: <ProfilePage />,
         authOnly: true,
     },
     [AppRoutes.ARTICLES]: {
         path: RoutePath.articles,
-        element: <ArticlePage />,
+        element: <ArticlesPage />,
         authOnly: true,
     },
     [AppRoutes.ARTICLE_DETAILS]: {
@@ -55,7 +55,7 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
         authOnly: true,
     },
     // last
-    [AppRoutes.__NOT_FOUND]: {
+    [AppRoutes.NOT_FOUND]: {
         path: RoutePath.not_found,
         element: <NotFoundPage />,
     },
