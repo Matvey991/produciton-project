@@ -12,6 +12,7 @@ const data = {
     views: 1022,
     createdAt: '26.02.2022',
     type: [],
+    user: { id: '1', username: 'fda' },
     blocks: [],
 };
 
