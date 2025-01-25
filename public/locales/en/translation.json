@@ -1,10 +1,13 @@
 {
+  "Тестовый пример": "Test example",
+  "Перевод": "Translate",
   "Главная страница": "Main page",
-  "Профиль": "Profile Page",
   "Язык": "English",
+  "новый перевод": "новый перевод",
   "Страница не найдена": "Page not found",
   "Произошла непредвиденная ошибка": "An unexpected error has occurred",
   "Обновить страницу": "Reload page",
+  "throw error": "throw error",
   "Главная": "Main",
   "О сайте": "About us",
   "Переключить": "Переключить",
@@ -12,13 +15,20 @@
   "Войти": "Login",
   "increment": "increment",
   "decrement": "decrement",
-  "Страница Профиля": "Profile Page",
-  "Введите логин": "Enter username",
+  "Введите username": "Enter username",
   "Введите пароль": "Enter password",
   "Форма авторизации": "Auth form",
   "Вы ввели неверный логин или пароль": "Uncorrect username or password",
-  "Выйти": "Exit",
-  "Укажите валюту": "Specify the currency",
-  "Укажите страну": "Specify the country",
-  "Статьи": "Articles"
+  "Выйти": "Logout",
+  "Укажите валюту": "Choose currency",
+  "Укажите страну": "Choose country",
+  "Профиль": "Profile",
+  "Статья не найдена": "Статья не найдена",
+  "Статьи": "Articles",
+  "Произошла ошибка при загрузке статьи": {
+    "": "Произошла ошибка при загрузке статьи."
+  },
+  "Комментарии отсутствуют": "Комментарии отсутствуют",
+  "Введите текст комментария": "Введите текст комментария",
+  "Отправить": "Отправить"
 }
