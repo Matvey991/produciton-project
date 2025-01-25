@@ -3,7 +3,7 @@ import { memo } from 'react';
 import ListIcon from 'shared/assets/icons/list.svg';
 import TiledIcon from 'shared/assets/icons/tiled.svg';
 import { Icon } from 'shared/ui/Icon/Icon';
-import { Button, ThemeButton } from 'shared/ui/Button/Button';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import cls from './ArticleViewSelector.module.scss';
 import { ArticleView } from '../../model/types/article';
 
@@ -36,8 +36,9 @@ export const ArticleViewSelector = memo((props: ArticleViewSelectorProps) => {
             {viewTypes.map((viewType) => (
                 <Button
                     className={cls.btn}
-                    theme={ThemeButton.CLEAR}
+                    theme={ButtonTheme.CLEAR}
                     onClick={onClick(viewType.view)}
+                    key={viewType.view}
                 >
                     <Icon
                         Svg={viewType.icon}

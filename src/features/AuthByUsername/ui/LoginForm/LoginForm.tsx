@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Button, ThemeButton } from 'shared/ui/Button/Button';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Input } from 'shared/ui/Input/Input';
 import { useSelector } from 'react-redux';
@@ -72,7 +72,7 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
                 <Button
                     disabled={isLoading}
                     onClick={onLoginClick}
-                    theme={ThemeButton.OUTLINE}
+                    theme={ButtonTheme.OUTLINE}
                     className={cls.loginBtn}
                 >
                     {t('Войти')}

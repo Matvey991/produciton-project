@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Button, ThemeButton } from 'shared/ui/Button/Button';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Text } from 'shared/ui/Text/Text';
 import { useSelector } from 'react-redux';
@@ -44,7 +44,7 @@ export const ProfilePageHeader = ({ className }: ProfilePageHeaderProps) => {
                     {readonly ? (
                         <Button
                             className={cls.editBtn}
-                            theme={ThemeButton.OUTLINE}
+                            theme={ButtonTheme.OUTLINE}
                             onClick={onEdit}
                         >
                             {t('Редактировать')}
@@ -54,14 +54,14 @@ export const ProfilePageHeader = ({ className }: ProfilePageHeaderProps) => {
                             <>
                                 <Button
                                     className={cls.editBtn}
-                                    theme={ThemeButton.OUTLINE_RED}
+                                    theme={ButtonTheme.OUTLINE_RED}
                                     onClick={onCancelEdit}
                                 >
                                     {t('Отменить')}
                                 </Button>
                                 <Button
                                     className={cls.saveBtn}
-                                    theme={ThemeButton.OUTLINE}
+                                    theme={ButtonTheme.OUTLINE}
                                     onClick={onSave}
                                 >
                                     {t('Сохранить')}

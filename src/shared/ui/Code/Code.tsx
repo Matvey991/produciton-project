@@ -3,7 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { memo, useCallback } from 'react';
 import cls from './Code.module.scss';
-import { Button, ThemeButton } from '../Button/Button';
+import { Button, ButtonTheme } from '../Button/Button';
 import CopyIcon from '../../assets/icons/Copy.svg';
 
 interface CodeProps {
@@ -25,7 +25,7 @@ export const Code = memo((props: CodeProps) => {
 
     return (
         <pre className={classNames(cls.Code, {}, [className])}>
-            <Button onClick={onCopy} className={cls.copyBtn} theme={ThemeButton.CLEAR}>
+            <Button onClick={onCopy} className={cls.copyBtn} theme={ButtonTheme.CLEAR}>
                 <CopyIcon className={cls.copyIcon} />
             </Button>
             <code>

@@ -2,7 +2,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { memo, useCallback } from 'react';
 import { Input } from 'shared/ui/Input/Input';
-import { Button, ThemeButton } from 'shared/ui/Button/Button';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { useSelector } from 'react-redux';
 import { useAppDispatch } from 'shared/lib/hooks/userAppDispatch/useAppDispatch';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
@@ -48,7 +48,7 @@ const AddCommentForm = memo((props: AddCommentFormProps) => {
                     onChange={onCommentTextChange}
                 />
                 <Button
-                    theme={ThemeButton.OUTLINE}
+                    theme={ButtonTheme.OUTLINE}
                     onClick={onSendHandler}
                 >
                     {t('Отправить')}
