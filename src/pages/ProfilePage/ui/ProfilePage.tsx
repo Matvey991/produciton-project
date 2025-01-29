@@ -6,7 +6,8 @@ import {
     getProfileReadonly,
     getProfileValidateErrors,
     profileActions,
-    ProfileCard, profileReducer,
+    ProfileCard,
+    profileReducer,
     ValidateProfileError,
 } from 'entities/Profile';
 import { memo, useCallback } from 'react';
@@ -28,7 +29,7 @@ const reducers: ReducersList = {
 };
 
 interface ProfilePageProps {
-className?: string;
+    className?: string;
 }
 
 const ProfilePage = memo(({ className }: ProfilePageProps) => {

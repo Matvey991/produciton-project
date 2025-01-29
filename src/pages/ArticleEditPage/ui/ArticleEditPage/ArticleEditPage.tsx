@@ -16,7 +16,6 @@ const ArticleEditPage = memo((props: ArticleEditPageProps) => {
     const isEdit = Boolean(id);
 
     return (
-        // eslint-disable-next-line i18next/no-literal-string
         <Page className={classNames(cls.ArticleEditPage, {}, [className])}>
             {isEdit
                 ? t(`Редактировать статью с ID = ${id}`)
