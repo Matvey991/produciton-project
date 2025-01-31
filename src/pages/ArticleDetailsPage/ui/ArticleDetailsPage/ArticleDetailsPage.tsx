@@ -11,11 +11,11 @@ import { useAppDispatch } from 'shared/lib/hooks/userAppDispatch/useAppDispatch'
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { AddCommentForm } from 'features/addCommentForm';
 import { Page } from 'shared/ui/Page/Page';
-import { getArticleRecommendationsIsLoading } from 'pages/ArticleDetailsPage/model/selectors/recommendations';
+import { getArticleRecommendationsIsLoading } from '../../model/selectors/recommendations';
 import {
     fetchArticleRecommendations,
-} from 'pages/ArticleDetailsPage/model/services/fetchArticleRecommendations/fetchArticleRecommendations';
-import { articleDetailsPageReducer } from 'pages/ArticleDetailsPage/model/slices';
+} from '../../model/services/fetchArticleRecommendations/fetchArticleRecommendations';
+import { articleDetailsPageReducer } from '../../model/slices';
 import {
     getArticleComments,
 } from '../../model/slices/articleDetailsCommentsSlice';

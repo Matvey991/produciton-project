@@ -14,7 +14,7 @@ interface ArticleListProps {
    articles: Article[];
    isLoading?: boolean;
    view?: ArticleView;
-    target?: HTMLAttributeAnchorTarget;
+   target?: HTMLAttributeAnchorTarget;
 
 }
 
