@@ -19,6 +19,7 @@
     border: 1px solid var(--primary-color);
     flex-direction: column;
     display: flex;
+    border-radius: 8px;
 }
 
 .item {
@@ -32,6 +33,7 @@
 }
 
 .active {
+    border-radius: 8px;
     background-color: var(--inverted-primary-color);
 }
 
