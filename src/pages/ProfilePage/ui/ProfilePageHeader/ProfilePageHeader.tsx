@@ -50,7 +50,7 @@ export const ProfilePageHeader = ({ className }: ProfilePageHeaderProps) => {
                         </Button>
                     )
                         : (
-                            <HStack>
+                            <HStack gap="12">
                                 <Button
                                     theme={ButtonTheme.OUTLINE_RED}
                                     onClick={onCancelEdit}
