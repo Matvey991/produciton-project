@@ -44,8 +44,6 @@ export function ListBox(props: ListBoxProps) {
         label,
     } = props;
 
-    const [selectedPerson, setSelectedPerson] = useState(0);
-
     const optionsClasses = [mapDirectionClass[direction]];
 
     return (
