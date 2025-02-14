@@ -1,7 +1,5 @@
-import { userActions } from 'entities/User';
 import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
 import { fetchArticleById } from './fetchArticleById';
-import { ArticleBlock, ArticleType } from '../../types/article';
 
 describe('fetchArticleById.test', () => {
     test('success', async () => {

@@ -8,9 +8,8 @@ import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { useTranslation } from 'react-i18next';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
-import {
-    Article, ArticleBlockType, ArticleTextBlock, ArticleView,
-} from '../../model/types/article';
+import { ArticleBlockType, ArticleView } from 'entities/Article/model/consts/consts';
+import { Article, ArticleTextBlock } from 'entities/Article/model/types/article';
 import cls from './ArticleListItem.module.scss';
 import EyeIcon from '../../../../shared/assets/icons/Eye.svg';
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';

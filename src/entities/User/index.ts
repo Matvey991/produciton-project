@@ -4,4 +4,6 @@ export { isUserAdmin, isUserManager, getUserRoles } from './model/selectors/role
 export { getUserInited } from './model/selectors/getUserInited/getUserInited';
 
 export { userReducers, userActions } from './model/slice/userSlice';
-export { UserSchema, User, UserRole } from './model/types/user';
+
+export { UserRole } from './model/types/user';
+export type { UserSchema, User } from './model/types/user';

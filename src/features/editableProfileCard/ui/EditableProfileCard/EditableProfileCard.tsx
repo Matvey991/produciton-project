@@ -10,14 +10,14 @@ import { ProfileCard } from 'entities/Profile';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { VStack } from 'shared/ui/Stack';
 import { useAppDispatch } from 'shared/lib/hooks/userAppDispatch/useAppDispatch';
+import { ValidateProfileError } from 'features/editableProfileCard/model/consts/consts';
+import { fetchProfileData } from '../../model/services/fetchProfileData/fetchProfileData';
 import { getProfileForm } from '../../model/selectors/getProfileForm/getProfileForm';
 import { getProfileIsLoading } from '../../model/selectors/getProfileIsLoading/getProfileIsLoading';
 import { getProfileError } from '../../model/selectors/getProfileError/getProfileError';
 import { getProfileReadonly } from '../../model/selectors/getProfileReadonly/getProfileReadonly';
 import { getProfileValidateErrors } from '../../model/selectors/getProfileValidateErrors/getProfileValidateErrors';
-import { fetchProfileData } from '../../model/services/fetchProfileData/fetchProfileData';
 import { profileActions, profileReducer } from '../../model/slice/profileSlice';
-import { ValidateProfileError } from '../../model/types/editableProfileCardSchema';
 import { EditableProfileCardHeader } from '../EditableProfileCardHeader/EditableProfileCardHeader';
 
 interface EditableProfileCardProps {

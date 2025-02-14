@@ -9,13 +9,14 @@ import { Skeleton } from 'shared/ui/Skeleton/Skeleton';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Icon } from 'shared/ui/Icon/Icon';
 import { HStack, VStack } from 'shared/ui/Stack';
+import { ArticleBlockType } from 'entities/Article/model/consts/consts';
 import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArticleById';
 import {
     getArticleDetailsData,
     getArticleDetailsError,
     getArticleDetailsIsLoading,
 } from '../../model/selectors/articleDetails';
-import { ArticleBlock, ArticleBlockType } from '../../model/types/article';
+import { ArticleBlock } from '../../model/types/article';
 import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
 import cls from './ArticleDetails.module.scss';
 import EyeIcon from '../../../../shared/assets/icons/Eye.svg';
