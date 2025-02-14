@@ -1,5 +1,5 @@
 export {
-    ArticlePageAsync as ArticlePage,
+    ArticlePageAsync as ArticlesPage,
 } from './ui/ArticlesPage/ArticlesPage.async';
 
 export type { ArticlePageSchema } from './model/types/articlePageSchema';

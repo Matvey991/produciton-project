@@ -5,5 +5,5 @@ export { getUserInited } from './model/selectors/getUserInited/getUserInited';
 
 export { userReducers, userActions } from './model/slice/userSlice';
 
-export { UserRole } from './model/types/user';
+export { UserRole } from './model/consts/consts';
 export type { UserSchema, User } from './model/types/user';
