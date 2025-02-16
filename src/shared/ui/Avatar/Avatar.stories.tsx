@@ -1,10 +1,10 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Avatar } from './Avatar';
-import AvatarIcon from './programmer-icon-line-color-illustration-vector.jpg';
+import AvatarImg from './programmer-icon-line-color-illustration-vector.jpg';
 
 export default {
-    title: 'shared/AppLink',
+    title: 'shared/Avatar',
     component: Avatar,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -16,11 +16,11 @@ const Template: ComponentStory<typeof Avatar> = (args) => <Avatar {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
     size: 150,
-    src: AvatarIcon,
+    src: AvatarImg,
 };
 
 export const Small = Template.bind({});
-Primary.args = {
+Small.args = {
     size: 50,
-    src: AvatarIcon,
+    src: AvatarImg,
 };
