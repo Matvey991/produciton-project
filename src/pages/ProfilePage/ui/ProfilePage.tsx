@@ -1,14 +1,14 @@
-import { EditableProfileCard } from 'features/editableProfileCard';
 import { memo } from 'react';
-import { classNames } from 'shared/lib/classNames/classNames';
-import { Page } from 'shared/ui/Page/Page';
-import { VStack } from 'shared/ui/Stack';
 import { useParams } from 'react-router-dom';
-import { Text } from 'shared/ui/Text/Text';
 import { useTranslation } from 'react-i18next';
+import { EditableProfileCard } from '@/features/editableProfileCard';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { Page } from '@/shared/ui/Page/Page';
+import { VStack } from '@/shared/ui/Stack';
+import { Text } from '@/shared/ui/Text/Text';
 import {
     EditableProfileCardHeader,
-} from 'features/editableProfileCard/ui/EditableProfileCardHeader/EditableProfileCardHeader';
+} from '@/features/editableProfileCard/ui/EditableProfileCardHeader/EditableProfileCardHeader';
 
 interface ProfilePageProps {
     className?: string;

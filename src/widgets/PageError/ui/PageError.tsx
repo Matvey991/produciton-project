@@ -1,7 +1,7 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
-import { Button, ButtonTheme } from 'shared/ui/Button/Button';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { LangSwitcher } from '@/shared/ui/LangSwitcher/LangSwitcher';
+import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
 import cls from './PageError.module.scss';
 
 interface PageErrorProps {
