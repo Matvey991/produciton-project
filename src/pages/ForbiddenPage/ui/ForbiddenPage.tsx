@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Page } from '@/shared/ui/Page/Page';
 
 const ForbiddenPage = memo(() => {
-    const { t } = useTranslation();
+    const { t } = useTranslation('about');
     return (
         <Page>
             {t('У вас нет доступа к этой странице')}

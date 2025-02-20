@@ -808,6 +808,12 @@
       "rate": 2,
       "feedback": "отстой",
       "id": "sQRbSfs"
+    },
+    {
+      "userId": "2",
+      "articleId": "7",
+      "rate": 2,
+      "id": "0DSUVEW"
     }
   ]
 }
