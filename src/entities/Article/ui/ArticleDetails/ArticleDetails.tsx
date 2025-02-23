@@ -9,7 +9,7 @@ import { Skeleton } from '@/shared/ui/Skeleton/Skeleton';
 import { Avatar } from '@/shared/ui/Avatar/Avatar';
 import { Icon } from '@/shared/ui/Icon/Icon';
 import { HStack, VStack } from '@/shared/ui/Stack';
-import { ArticleBlockType } from '@/entities/Article/model/consts/consts';
+import { ArticleBlockType } from '@/entities/Article';
 import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArticleById';
 import {
     getArticleDetailsData,

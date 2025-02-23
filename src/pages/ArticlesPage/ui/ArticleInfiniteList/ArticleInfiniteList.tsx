@@ -6,7 +6,7 @@ import {
     getArticlesPageError,
     getArticlesPageIsLoading,
     getArticlesPageView,
-} from '@/pages/ArticlesPage/model/selectors/articlesPageSelectors';
+} from '../../model/selectors/articlesPageSelectors';
 import { ArticleList } from '@/entities/Article';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
