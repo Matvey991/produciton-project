@@ -1,4 +1,3 @@
-import React from 'react';
 import { createSelector } from '@reduxjs/toolkit';
 import { getUserAuthData } from '@/entities/User';
 import MainIcon from '@/shared/assets/icons/main.svg';
