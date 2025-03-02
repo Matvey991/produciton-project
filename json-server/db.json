@@ -695,6 +695,12 @@
       "userId": "1",
       "text": "123",
       "id": "KmtWJR_"
+    },
+    {
+      "articleId": "8",
+      "userId": "2",
+      "text": "124",
+      "id": "qmG9MzK"
     }
   ],
   "users": [
@@ -740,14 +746,15 @@
     },
     {
       "id": "2",
-      "first": "ulbi tv",
+      "first": "fadf",
       "lastname": "asf",
-      "age": 465,
+      "age": 100,
       "currency": "EUR",
       "country": "Ukraine",
       "city": "Moscow",
       "username": "ulbi tv",
-      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg",
+      "lastName": "dima"
     }
   ],
   "article-ratings": [
