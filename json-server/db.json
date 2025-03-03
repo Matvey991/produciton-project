@@ -695,12 +695,6 @@
       "userId": "1",
       "text": "123",
       "id": "KmtWJR_"
-    },
-    {
-      "articleId": "8",
-      "userId": "2",
-      "text": "124",
-      "id": "qmG9MzK"
     }
   ],
   "users": [
@@ -746,15 +740,14 @@
     },
     {
       "id": "2",
-      "first": "fadf",
+      "first": "ulbi tv",
       "lastname": "asf",
-      "age": 100,
+      "age": 465,
       "currency": "EUR",
       "country": "Ukraine",
       "city": "Moscow",
       "username": "ulbi tv",
-      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg",
-      "lastName": "dima"
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],
   "article-ratings": [
@@ -780,53 +773,41 @@
       "id": "I7ofk1u"
     },
     {
-      "id": "x02ywiD"
-    },
-    {
-      "id": "L7eFq38"
-    },
-    {
-      "id": "MDJtETk"
-    },
-    {
       "userId": "1",
-      "articleId": "4",
-      "rate": 3,
-      "feedback": " топ",
-      "id": "M4-s-XD"
-    },
-    {
-      "userId": "1",
-      "articleId": "7",
-      "rate": 3,
-      "feedback": "крутая статья",
-      "id": "ULi7GAI"
+      "articleId": "9",
+      "rate": 5,
+      "feedback": "asdasdasdasd",
+      "id": "Y7MhPzo"
     },
     {
       "userId": "1",
       "articleId": "10",
-      "rate": 3,
-      "feedback": "крутооо",
-      "id": "PTvmWPk"
+      "rate": 1,
+      "feedback": "отстой",
+      "id": "II0a75O"
     },
     {
       "userId": "1",
-      "articleId": "6",
-      "rate": 2,
-      "feedback": "отстой",
-      "id": "sQRbSfs"
-    },
-    {
-      "userId": "2",
       "articleId": "7",
-      "rate": 2,
-      "id": "0DSUVEW"
+      "rate": 3,
+      "feedback": "",
+      "id": "bcPnbbZ"
+    }
+  ],
+  "profile-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "profileId": "1"
     },
     {
-      "userId": "2",
-      "articleId": "11",
-      "rate": 2,
-      "id": "Siv0Vgr"
+      "id": "2",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "profileId": "2"
     }
   ]
 }
