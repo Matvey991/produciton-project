@@ -1,8 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { memo, useCallback, useState } from 'react';
 import { BrowserView, MobileView } from 'react-device-detect';
-import { classNames } from '@/shared/lib/classNames/classNames';
-import cls from './RatingCard.module.scss';
 import { Card } from '@/shared/ui/Card';
 import { HStack, VStack } from '@/shared/ui/Stack';
 import { Text } from '@/shared/ui/Text';
@@ -56,6 +54,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
                 title={feedbackTitle}
             />
             <Input
+                data-testid="RatingCard.Input"
                 value={feedback}
                 onChange={setFeedback}
                 placeholder={t('Ваш отзыв')}
@@ -64,7 +63,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
     );
 
     return (
-        <Card className={classNames(cls.RatingCard, {}, [className])} max>
+        <Card data-testid="RatingCard" max className={className}>
             <VStack align="center" gap="8">
                 <Text
                     title={starsCount ? t('Спасибо за оценку!') : title}
@@ -77,12 +76,14 @@ export const RatingCard = memo((props: RatingCardProps) => {
                         {modalContent}
                         <HStack max gap="16" justify="end">
                             <Button
+                                data-testid="RatingCard.Close"
                                 onClick={cancelHandler}
                                 theme={ButtonTheme.OUTLINE_RED}
                             >
                                 {t('Закрыть')}
                             </Button>
                             <Button
+                                data-testid="RatingCard.Send"
                                 onClick={acceptHandler}
                             >
                                 {t('Отправить')}
