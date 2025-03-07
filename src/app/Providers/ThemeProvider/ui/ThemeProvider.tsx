@@ -1,9 +1,7 @@
-import React, { ReactNode, useMemo, useState } from 'react';
+import React, { ReactNode, useEffect, useMemo, useState } from 'react';
 import { ThemeContext } from '../../../../shared/lib/contenxt/ThemeContext';
-import { LOCAL_STORAGE_THEME_KEY } from '@/shared/const/localstorage';
 import { Theme } from '@/shared/const/theme';
-
-const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme || Theme.LIGHT;
+import { useJsonSettings } from '@/entities/User';
 
 interface ThemeProviderProps {
     initialTheme?: Theme;
@@ -15,8 +13,17 @@ const ThemeProvider = (props: ThemeProviderProps) => {
         initialTheme,
         children,
     } = props;
+    const { theme: defaultTheme = Theme.LIGHT } = useJsonSettings()
+    const [isThemeInitied, setThemeInited] = useState(false)
 
     const [theme, setTheme] = useState<Theme>(initialTheme || defaultTheme);
+
+    useEffect(() => {
+        if (!isThemeInitied) {
+            setTheme(defaultTheme)
+            setThemeInited(true)
+        }
+    }, [defaultTheme, isThemeInitied])
 
     const defaultProps = useMemo(() => ({
         theme,
